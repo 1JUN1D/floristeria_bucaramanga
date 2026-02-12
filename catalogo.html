@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Larosset | Flores en Bucaramanga</title>
+    <meta name="description"
+        content="Catálogo completo de Larosset en Bucaramanga. Rosas, girasoles, arreglos florales y más con entrega a domicilio.">
+    <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1181834803900250');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1181834803900250&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WGF9WXLTKL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WGF9WXLTKL');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17503274952"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-17503274952');
+    </script>
+
+    <!-- FUNCIÓN DE TRACKING WHATSAPP PARA GOOGLE ADS -->
+    <script>
+        function trackWhatsAppLead(whatsappUrl, eventLabel) {
+            try {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17503274952/lA9PCODAu4wbEMiPm5pB',
+                    'event_callback': function () {
+                        window.open(whatsappUrl, '_blank');
+                    }
+                });
+            } catch (error) {
+                console.error('Error en tracking:', error);
+                window.open(whatsappUrl, '_blank');
+            }
+            return false;
+        }
+    </script>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Larosset Logo">
+            </div>
+            <h1>Nuestro Catálogo</h1>
+            <p>Flores frescas y arreglos únicos para cada ocasión especial en Bucaramanga</p>
+            <div class="decorative-line"></div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="rosas">Rosas</button>
+                <button class="filter-btn" data-category="girasoles">Girasoles</button>
+                <button class="filter-btn" data-category="mixtas">Flores Mixtas</button>
+                <button class="filter-btn" data-category="chocolates">Rosas + Chocolates</button>
+                <button class="filter-btn" data-category="premium">Arreglos Premium</button>
+                <button class="filter-btn" data-category="funebres">Arreglos Fúnebres</button>
+                <button class="filter-btn" data-category="especiales">Ocasiones Especiales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+        <div class="container">
+            <div class="products-grid">
+
+                <!-- PRODUCTO 1 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_1.webp')">
+                        <img src="assets/flores_bucaramanga_1.webp" alt="Amor en Caja">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Amor en Caja</h2>
+                        <p class="product-description">Hermosa caja decorativa con rosas frescas y globo de corazón. Diseño romántico perfecto para sorprender y expresar amor verdadero en cualquier ocasión especial memorable.</p>
+                        <div class="product-price">$200,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Amor en Caja por $200,000. ¿Podrías darme más información?', 'amor_caja_1')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_2.webp')">
+                        <img src="assets/flores_bucaramanga_2.webp" alt="Elegancia Blanca">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Elegancia Blanca</h2>
+                        <p class="product-description">Ramo sofisticado de rosas con envoltorio blanco elegante. Transmite pureza y amor sincero en presentación atemporal que conquista desde el primer vistazo siempre.</p>
+                        <div class="product-price">$106,250</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Elegancia Blanca por $106,250. ¿Podrías darme más información?', 'elegancia_blanca_2')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="product-card" data-category="chocolates">
+                    <div class="category-badge">Rosas + Chocolates</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_3.webp')">
+                        <img src="assets/flores_bucaramanga_3.webp" alt="Dulzura Dorada">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Dulzura Dorada</h2>
+                        <p class="product-description">Arreglo exclusivo con rosas amarillas y rosadas acompañadas de chocolates selectos. La combinación perfecta entre belleza natural y sabor irresistible que conquista todos los sentidos.</p>
+                        <div class="product-price">$375,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Dulzura Dorada por $375,000. ¿Podrías darme más información?', 'dulzura_dorada_3')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 4 -->
+                <div class="product-card" data-category="chocolates">
+                    <div class="category-badge">Rosas + Fresas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_4.webp')">
+                        <img src="assets/flores_bucaramanga_4.webp" alt="Tentación Dorada">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Tentación Dorada</h2>
+                        <p class="product-description">Rosas amarillas frescas con fresas cubiertas de chocolate. Diseño gourmet que fusiona romance con sabor exquisito en presentación que deja huella inolvidable siempre.</p>
+                        <div class="product-price">$218,750</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Tentación Dorada por $218,750. ¿Podrías darme más información?', 'tentacion_dorada_4')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 5 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Mixtas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_5.webp')">
+                        <img src="assets/flores_bucaramanga_5.webp" alt="Jardín Solar">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Jardín Solar</h2>
+                        <p class="product-description">Arreglo variado con girasol protagonista y flores complementarias frescas. Transmite alegría, luz y buenos deseos en combinación natural que ilumina cualquier espacio especial.</p>
+                        <div class="product-price">$187,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Jardín Solar por $187,500. ¿Podrías darme más información?', 'jardin_solar_5')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 6 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Arreglos Premium</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_6.webp')">
+                        <img src="assets/flores_bucaramanga_6.webp" alt="Abundancia Natural">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Abundancia Natural</h2>
+                        <p class="product-description">Ramo grande espectacular combinado con frutas frescas selectas. Diseño premium que fusiona belleza floral con frescura frutal en presentación de máximo impacto visual memorable.</p>
+                        <div class="product-price">$450,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Abundancia Natural por $450,000. ¿Podrías darme más información?', 'abundancia_natural_6')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 7 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Lirios</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_7.webp')">
+                        <img src="assets/flores_bucaramanga_7.webp" alt="Pureza Majestuosa">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Pureza Majestuosa</h2>
+                        <p class="product-description">Ramo abundante de lirios frescos aromáticos. Transmite elegancia, pureza y admiración profunda en presentación sofisticada que conquista con belleza natural absoluta siempre.</p>
+                        <div class="product-price">$437,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Pureza Majestuosa por $437,500. ¿Podrías darme más información?', 'pureza_majestuosa_7')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 8 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Rosas en Base</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_8.webp')">
+                        <img src="assets/flores_bucaramanga_8.webp" alt="Corona Imperial">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Corona Imperial</h2>
+                        <p class="product-description">Ramo grande de rosas en base circular elegante. Diseño majestuoso que simboliza amor eterno y admiración suprema en presentación de máxima distinción natural memorable.</p>
+                        <div class="product-price">$475,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Corona Imperial por $475,000. ¿Podrías darme más información?', 'corona_imperial_8')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 9 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas Amarillas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_9.webp')">
+                        <img src="assets/flores_bucaramanga_9.webp" alt="Luz en Caja">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Luz en Caja</h2>
+                        <p class="product-description">Caja elegante con rosas amarillas frescas radiantes. Transmite amistad, gratitud y alegría en presentación sofisticada que ilumina espacios y corazones con luz natural pura.</p>
+                        <div class="product-price">$212,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Luz en Caja por $212,500. ¿Podrías darme más información?', 'luz_caja_9')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 10 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas Amarillas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_10.webp')">
+                        <img src="assets/flores_bucaramanga_10.webp" alt="Esencia Dorada">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Esencia Dorada</h2>
+                        <p class="product-description">Caja decorativa con rosas amarillas que irradian energía positiva. Perfecto para expresar cariño sincero y buenos deseos en presentación elegante que nunca falla siempre.</p>
+                        <div class="product-price">$162,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Esencia Dorada por $162,500. ¿Podrías darme más información?', 'esencia_dorada_10')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 11 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Arreglos Premium</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_11.webp')">
+                        <img src="assets/flores_bucaramanga_11.webp" alt="Círculo de Amor">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Círculo de Amor</h2>
+                        <p class="product-description">Arreglo circular espectacular de rosas con hojas verdes frescas. Diseño sofisticado que simboliza amor eterno y perfección natural en presentación de máximo impacto visual memorable.</p>
+                        <div class="product-price">$687,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Círculo de Amor por $687,500. ¿Podrías darme más información?', 'circulo_amor_11')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 12 -->
+                <div class="product-card" data-category="chocolates">
+                    <div class="category-badge">Rosas + Fresas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_12.webp')">
+                        <img src="assets/flores_bucaramanga_12.webp" alt="Pasión Gourmet">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Pasión Gourmet</h2>
+                        <p class="product-description">Caja de rosas rojas con fresas cubiertas de chocolate. La combinación perfecta entre romance intenso y sabor exquisito que conquista corazón y paladar simultáneamente siempre.</p>
+                        <div class="product-price">$212,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Pasión Gourmet por $212,500. ¿Podrías darme más información?', 'pasion_gourmet_12')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 13 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Arreglos en Base</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_13.webp')">
+                        <img src="assets/flores_bucaramanga_13.webp" alt="Dualidad Perfecta">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Dualidad Perfecta</h2>
+                        <p class="product-description">Rosas blancas y rojas en base circular elegante. Combina pureza con pasión en armonía perfecta que transmite amor completo y verdadero en presentación sofisticada memorable.</p>
+                        <div class="product-price">$187,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Dualidad Perfecta por $187,500. ¿Podrías darme más información?', 'dualidad_perfecta_13')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 14 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Arreglos en Base</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_14.webp')">
+                        <img src="assets/flores_bucaramanga_14.webp" alt="Fusión Vibrante">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Fusión Vibrante</h2>
+                        <p class="product-description">Rosas fucsia y rosadas en base circular decorativa. Diseño alegre que transmite amor juvenil y energía positiva en presentación que roba miradas desde el primer instante visual.</p>
+                        <div class="product-price">$168,750</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Fusión Vibrante por $168,750. ¿Podrías darme más información?', 'fusion_vibrante_14')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 15 -->
+                <div class="product-card" data-category="especiales">
+                    <div class="category-badge">Rosas + Champagne</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_15.webp')">
+                        <img src="assets/flores_bucaramanga_15.webp" alt="Celebración Rosa">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Celebración Rosa</h2>
+                        <p class="product-description">Rosas rosadas en caja elegante con champagne. Diseño sofisticado perfecto para celebrar momentos especiales con lujo, romance y distinción absoluta que impacta siempre.</p>
+                        <div class="product-price">$225,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Celebración Rosa por $225,000. ¿Podrías darme más información?', 'celebracion_rosa_15')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 16 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas + Lirios</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_16.webp')">
+                        <img src="assets/flores_bucaramanga_16.webp" alt="Armonía Celestial">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Armonía Celestial</h2>
+                        <p class="product-description">Rosas blancas combinadas con lirios aromáticos. Transmite pureza suprema y elegancia natural en arreglo que simboliza amor sereno y profundo en presentación atemporal memorable.</p>
+                        <div class="product-price">$250,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Armonía Celestial por $250,000. ¿Podrías darme más información?', 'armonia_celestial_16')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 17 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Ramos de Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_17.webp')">
+                        <img src="assets/flores_bucaramanga_17.webp" alt="Clásico Eterno">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Clásico Eterno</h2>
+                        <p class="product-description">Ramo tradicional de rosas frescas envuelto con elegancia. Belleza atemporal que nunca falla para expresar amor sincero en cualquier ocasión especial del corazón siempre.</p>
+                        <div class="product-price">$250,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Clásico Eterno por $250,000. ¿Podrías darme más información?', 'clasico_eterno_17')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 18 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas Especiales</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_18.webp')">
+                        <img src="assets/flores_bucaramanga_18.webp" alt="Cielo y Nube">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Cielo y Nube</h2>
+                        <p class="product-description">Ramo único de rosas blancas y azules. Combinación especial que transmite serenidad celestial y amor puro en presentación original que conquista con belleza natural diferente.</p>
+                        <div class="product-price">$193,750</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Cielo y Nube por $193,750. ¿Podrías darme más información?', 'cielo_nube_18')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 19 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Regalo Espectacular</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_19.webp')">
+                        <img src="assets/flores_bucaramanga_19.webp" alt="Grandeza Absoluta">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Grandeza Absoluta</h2>
+                        <p class="product-description">Ramo de girasoles + corazones rojos en forma de corazón + peluche tamaño persona. El regalo más espectacular para sorprender en grande y dejar huella imborrable eternamente.</p>
+                        <div class="product-price">$1,090,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Grandeza Absoluta por $1,090,000. ¿Podrías darme más información?', 'grandeza_absoluta_19')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 20 -->
+                <div class="product-card" data-category="chocolates">
+                    <div class="category-badge">Rosas + Peluche</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_20.webp')">
+                        <img src="assets/flores_bucaramanga_20.webp" alt="Ternura Dulce">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Ternura Dulce</h2>
+                        <p class="product-description">Ramo de rosas rosadas con chocolates selectos y peluche de vaquita. Combina romance, dulzura y ternura en regalo completo que conquista todos los sentidos emocionales.</p>
+                        <div class="product-price">$225,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Ternura Dulce por $225,000. ¿Podrías darme más información?', 'ternura_dulce_20')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 21 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Mixtas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_21.webp')">
+                        <img src="assets/flores_bucaramanga_21.webp" alt="Contraste Elegante">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Contraste Elegante</h2>
+                        <p class="product-description">Rosas rojas y claveles blancos en base circular sofisticada. Diseño que fusiona pasión con pureza en presentación elegante que transmite amor completo y equilibrado siempre.</p>
+                        <div class="product-price">$375,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Contraste Elegante por $375,000. ¿Podrías darme más información?', 'contraste_elegante_21')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 22 -->
+                <div class="product-card" data-category="chocolates">
+                    <div class="category-badge">Rosas + Chocolates</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_22.webp')">
+                        <img src="assets/flores_bucaramanga_22.webp" alt="Energía Dulce">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Energía Dulce</h2>
+                        <p class="product-description">Rosas naranjas con chocolates en base circular. Transmite vitalidad, alegría y sabor en combinación vibrante que ilumina espacios y corazones con energía positiva natural.</p>
+                        <div class="product-price">$162,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Energía Dulce por $162,500. ¿Podrías darme más información?', 'energia_dulce_22')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 23 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Variadas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_23.webp')">
+                        <img src="assets/flores_bucaramanga_23.webp" alt="Jardín Encantado">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Jardín Encantado</h2>
+                        <p class="product-description">Ramo variado con flores frescas en combinación armoniosa. Transmite alegría natural y buenos deseos en presentación que celebra la belleza de la diversidad floral siempre.</p>
+                        <div class="product-price">$293,750</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Jardín Encantado por $293,750. ¿Podrías darme más información?', 'jardin_encantado_23')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 24 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores en Jarrón</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_24.webp')">
+                        <img src="assets/flores_bucaramanga_24.webp" alt="Elegancia en Cristal">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Elegancia en Cristal</h2>
+                        <p class="product-description">Ramo variado en jarrón elegante incluido. Perfecto para decorar espacios con belleza natural que permanece y embellece con sofisticación atemporal que nunca falla.</p>
+                        <div class="product-price">$237,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Elegancia en Cristal por $237,500. ¿Podrías darme más información?', 'elegancia_cristal_24')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 25 -->
+                <div class="product-card" data-category="especiales">
+                    <div class="category-badge">Arreglos en Canasta</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_25.webp')">
+                        <img src="assets/flores_bucaramanga_25.webp" alt="Canasta Romántica">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Canasta Romántica</h2>
+                        <p class="product-description">Ramo de rosas con flores complementarias en canasta decorativa. Diseño campestre que transmite amor natural y auténtico en presentación encantadora que conquista con simplicidad bella.</p>
+                        <div class="product-price">$375,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Canasta Romántica por $375,000. ¿Podrías darme más información?', 'canasta_romantica_25')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 26 -->
+                <div class="product-card" data-category="chocolates">
+                    <div class="category-badge">Rosas + Fresas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_26.webp')">
+                        <img src="assets/flores_bucaramanga_26.webp" alt="Corazón Gourmet">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Corazón Gourmet</h2>
+                        <p class="product-description">Ramo de rosas blancas y rosadas con fresas cubiertas de chocolate en forma de corazón. Romance y sabor unidos en presentación que expresa amor dulce eternamente.</p>
+                        <div class="product-price">$231,250</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Corazón Gourmet por $231,250. ¿Podrías darme más información?', 'corazon_gourmet_26')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 27 -->
+                <div class="product-card" data-category="funebres">
+                    <div class="category-badge">Arreglos Fúnebres</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_27.webp')">
+                        <img src="assets/flores_bucaramanga_27.webp" alt="Tributo Eterno">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Tributo Eterno</h2>
+                        <p class="product-description">Arreglo fúnebre elegante con flores blancas seleccionadas. Diseño respetuoso que honra la memoria y transmite paz, amor y recuerdo eterno en presentación solemne digna.</p>
+                        <div class="product-price">$450,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Tributo Eterno por $450,000. ¿Podrías darme más información?', 'tributo_eterno_27')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 28 -->
+                <div class="product-card" data-category="funebres">
+                    <div class="category-badge">Arreglos Fúnebres</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_28.webp')">
+                        <img src="assets/flores_bucaramanga_28.webp" alt="Memoria Sagrada">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Memoria Sagrada</h2>
+                        <p class="product-description">Arreglo fúnebre sofisticado con flores frescas en tonos serenos. Transmite respeto profundo y amor eterno en presentación que honra con dignidad y belleza natural.</p>
+                        <div class="product-price">$387,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Memoria Sagrada por $387,500. ¿Podrías darme más información?', 'memoria_sagrada_28')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 29 -->
+                <div class="product-card" data-category="funebres">
+                    <div class="category-badge">Arreglos Fúnebres</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_29.webp')">
+                        <img src="assets/flores_bucaramanga_29.webp" alt="Paz Eterna">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Paz Eterna</h2>
+                        <p class="product-description">Arreglo fúnebre delicado con flores blancas puras. Diseño que simboliza descanso eterno y amor que trasciende en presentación respetuosa que consuela corazones siempre.</p>
+                        <div class="product-price">$218,750</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Paz Eterna por $218,750. ¿Podrías darme más información?', 'paz_eterna_29')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 30 -->
+                <div class="product-card" data-category="funebres">
+                    <div class="category-badge">Arreglos Fúnebres</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_30.webp')">
+                        <img src="assets/flores_bucaramanga_30.webp" alt="Recuerdo Eterno">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Recuerdo Eterno</h2>
+                        <p class="product-description">Arreglo fúnebre majestuoso con flores premium seleccionadas. Transmite honor supremo y respeto profundo en presentación que celebra vida vivida con amor y dignidad absoluta.</p>
+                        <div class="product-price">$475,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Recuerdo Eterno por $475,000. ¿Podrías darme más información?', 'recuerdo_eterno_30')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 31 -->
+                <div class="product-card" data-category="funebres">
+                    <div class="category-badge">Arreglos Fúnebres</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_31.webp')">
+                        <img src="assets/flores_bucaramanga_31.webp" alt="Amor Perpetuo">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Amor Perpetuo</h2>
+                        <p class="product-description">Arreglo fúnebre elegante con flores en tonos suaves. Diseño que transmite amor que permanece más allá del tiempo en presentación respetuosa que honra memorias eternamente.</p>
+                        <div class="product-price">$375,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Amor Perpetuo por $375,000. ¿Podrías darme más información?', 'amor_perpetuo_31')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 32 -->
+                <div class="product-card" data-category="funebres">
+                    <div class="category-badge">Arreglos Fúnebres</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_32.webp')">
+                        <img src="assets/flores_bucaramanga_32.webp" alt="Serenidad Final">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Serenidad Final</h2>
+                        <p class="product-description">Arreglo fúnebre sofisticado con flores blancas y verdes. Transmite paz profunda y descanso eterno en presentación que consuela con belleza natural serena y dignificante.</p>
+                        <div class="product-price">$437,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Serenidad Final por $437,500. ¿Podrías darme más información?', 'serenidad_final_32')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 33 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Mixtas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_33.webp')">
+                        <img src="assets/flores_bucaramanga_33.webp" alt="Jardín Rosa">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Jardín Rosa</h2>
+                        <p class="product-description">Ramo de flores rosadas variadas con rosas frescas. Transmite ternura y amor delicado en presentación natural que conquista con belleza suave y femenina siempre encantadora.</p>
+                        <div class="product-price">$112,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Jardín Rosa por $112,500. ¿Podrías darme más información?', 'jardin_rosa_33')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 34 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Variadas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_34.webp')">
+                        <img src="assets/flores_bucaramanga_34.webp" alt="Primavera Natural">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Primavera Natural</h2>
+                        <p class="product-description">Ramo variado con flores frescas en combinación primaveral. Transmite alegría renovada y buenos deseos en presentación que celebra vida y belleza natural con frescura absoluta.</p>
+                        <div class="product-price">$225,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Primavera Natural por $225,000. ¿Podrías darme más información?', 'primavera_natural_34')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 35 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Variadas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_35.webp')">
+                        <img src="assets/flores_bucaramanga_35.webp" alt="Pureza Mixta">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Pureza Mixta</h2>
+                        <p class="product-description">Ramo de flores blancas y rosadas en armonía delicada. Combina pureza con ternura en presentación que transmite amor sincero y buenos deseos con elegancia natural suave.</p>
+                        <div class="product-price">$187,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Pureza Mixta por $187,500. ¿Podrías darme más información?', 'pureza_mixta_35')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 36 -->
+                <div class="product-card" data-category="girasoles">
+                    <div class="category-badge">Girasoles</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_36.webp')">
+                        <img src="assets/flores_bucaramanga_36.webp" alt="Luz Compacta">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Luz Compacta</h2>
+                        <p class="product-description">Ramo de girasoles radiantes que iluminan cualquier espacio. Transmite alegría, esperanza y energía positiva en presentación que celebra vida con luz natural pura siempre.</p>
+                        <div class="product-price">$150,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Luz Compacta por $150,000. ¿Podrías darme más información?', 'luz_compacta_36')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 37 -->
+                <div class="product-card" data-category="girasoles">
+                    <div class="category-badge">Girasoles</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_37.webp')">
+                        <img src="assets/flores_bucaramanga_37.webp" alt="Sol Radiante">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Sol Radiante</h2>
+                        <p class="product-description">Ramo abundante de girasoles frescos luminosos. Diseño que desborda alegría y buenos deseos en presentación que ilumina corazones con energía solar natural desbordante siempre.</p>
+                        <div class="product-price">$187,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Sol Radiante por $187,500. ¿Podrías darme más información?', 'sol_radiante_37')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 38 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Claveles</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_38.webp')">
+                        <img src="assets/flores_bucaramanga_38.webp" alt="Tradición Eterna">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Tradición Eterna</h2>
+                        <p class="product-description">Ramo clásico de claveles frescos aromáticos. Belleza atemporal que representa amor duradero y admiración profunda en presentación tradicional que nunca pasa de moda.</p>
+                        <div class="product-price">$156,250</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Tradición Eterna por $156,250. ¿Podrías darme más información?', 'tradicion_eterna_38')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 39 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Rosas Premium</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_39.webp')">
+                        <img src="assets/flores_bucaramanga_39.webp" alt="Sofisticación Rosa">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Sofisticación Rosa</h2>
+                        <p class="product-description">Ramo premium de rosas rosadas y blancas frescas. Diseño sofisticado que transmite amor refinado y elegancia suprema en presentación de máxima distinción natural memorable siempre.</p>
+                        <div class="product-price">$375,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Sofisticación Rosa por $375,000. ¿Podrías darme más información?', 'sofisticacion_rosa_39')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 40 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Variadas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_40.webp')">
+                        <img src="assets/flores_bucaramanga_40.webp" alt="Campo Alegre">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Campo Alegre</h2>
+                        <p class="product-description">Ramo variado con flores frescas en combinación campestre. Transmite alegría natural y espontánea en presentación que celebra belleza simple y auténtica de la naturaleza siempre.</p>
+                        <div class="product-price">$106,250</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Campo Alegre por $106,250. ¿Podrías darme más información?', 'campo_alegre_40')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 41 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas Especiales</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_41.webp')">
+                        <img src="assets/flores_bucaramanga_41.webp" alt="Capullo Rosado">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Capullo Rosado</h2>
+                        <p class="product-description">Ramo de rosas blancas con puntas rosadas cerradas. Belleza delicada que simboliza amor floreciente y promesas por cumplir en presentación única que conquista con ternura pura.</p>
+                        <div class="product-price">$231,250</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Capullo Rosado por $231,250. ¿Podrías darme más información?', 'capullo_rosado_41')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 42 -->
+                <div class="product-card" data-category="girasoles">
+                    <div class="category-badge">Girasoles Mixtos</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_42.webp')">
+                        <img src="assets/flores_bucaramanga_42.webp" alt="Luz Mixta">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Luz Mixta</h2>
+                        <p class="product-description">Ramo de girasoles con flores complementarias variadas. Transmite alegría luminosa en presentación que combina energía solar con belleza natural diversa y encantadora siempre.</p>
+                        <div class="product-price">$112,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Luz Mixta por $112,500. ¿Podrías darme más información?', 'luz_mixta_42')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 43 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Variadas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_43.webp')">
+                        <img src="assets/flores_bucaramanga_43.webp" alt="Serenidad Natural">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Serenidad Natural</h2>
+                        <p class="product-description">Ramo variado de flores lilas y blancas frescas. Transmite paz serena y amor tranquilo en presentación delicada que conquista con belleza suave y armoniosa naturalmente siempre.</p>
+                        <div class="product-price">$100,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Serenidad Natural por $100,000. ¿Podrías darme más información?', 'serenidad_natural_43')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 44 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Variadas</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_44.webp')">
+                        <img src="assets/flores_bucaramanga_44.webp" alt="Frescura Primaveral">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Frescura Primaveral</h2>
+                        <p class="product-description">Ramo variado con flores frescas en tonos primaverales. Transmite renovación y alegría natural en presentación que celebra belleza espontánea de la naturaleza con vitalidad absoluta.</p>
+                        <div class="product-price">$187,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Frescura Primaveral por $187,500. ¿Podrías darme más información?', 'frescura_primaveral_44')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 45 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Arreglo Monumental</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_45.webp')">
+                        <img src="assets/flores_bucaramanga_45.webp" alt="Corazón Monumental">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Corazón Monumental</h2>
+                        <p class="product-description">Ramo gigante en forma de corazón con base de rosas blancas, rosadas y lirios. El arreglo más espectacular para declaraciones de amor que merecen ser eternas e inolvidables siempre.</p>
+                        <div class="product-price">$2,040,000</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Corazón Monumental por $2,040,000. ¿Podrías darme más información?', 'corazon_monumental_45')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 46 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas en Caja Corazón</div>
+                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_46.webp')">
+                        <img src="assets/flores_bucaramanga_46.webp" alt="Corazón Premium">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Corazón Premium</h2>
+                        <p class="product-description">Caja de rosas rosadas y blancas en forma de corazón. Diseño sofisticado que simboliza amor profundo y sincero en presentación elegante que conquista corazones desde el primer instante.</p>
+                        <div class="product-price">$312,500</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me interesa Corazón Premium por $312,500. ¿Podrías darme más información?', 'corazon_premium_46')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TARJETA FINAL - RAMOS PERSONALIZADOS -->
+                <div class="product-card special-card" data-category="especiales">
+                    <div class="product-content special-content">
+                        <h2 class="product-title special-title">🌹 Ramos Personalizados 🌹</h2>
+                        <p class="product-description special-description">
+                            ¿No encontraste lo que buscabas? Tenemos muchos más ramos disponibles y trabajamos arreglos completamente personalizados según tus necesidades y gustos. Contáctanos y crearemos el diseño perfecto para tu ocasión especial.
+                        </p>
+                        <button class="product-button special-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573126074493?text=Hola, me gustaría consultar sobre ramos personalizados. ¿Podrían ayudarme?', 'ramos_personalizados')">
+                            Consultar Ahora
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Vista Previa de Imagen -->
+    <div id="imageModal" class="modal" onclick="closeImageModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="#" onclick="return trackWhatsAppLead('https://wa.me/573126074493', 'floating_button_catalogo')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488" />
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Sistema de filtrado de productos
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+
+            function filterProducts(category) {
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        card.classList.add('fadeInUp');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('fadeInUp');
+                    }
+                });
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const category = this.dataset.category;
+                    filterProducts(category);
+
+                    const url = new URL(window.location);
+                    url.searchParams.set('categoria', category);
+                    window.history.pushState({}, '', url);
+                });
+            });
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryParam = urlParams.get('categoria');
+
+            if (categoryParam && categoryParam !== 'all') {
+                const targetButton = document.querySelector(`[data-category="${categoryParam}"]`);
+                if (targetButton) {
+                    targetButton.click();
+                }
+            }
+        });
+
+        // Función para abrir modal de imagen
+        function openImageModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Función para cerrar modal
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal con tecla ESC
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
