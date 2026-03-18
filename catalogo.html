@@ -83,6 +83,18 @@
     <!-- Filter Section -->
     <section class="filter-section">
         <div class="container">
+            <!-- Barra de Búsqueda -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Buscar ramos por nombre... (ej: rosas, girasoles, corazón)">
+                    <button id="clearSearch" class="clear-search" style="display:none;">&times;</button>
+                </div>
+                <p id="searchResults" class="search-results-text" style="display:none;"></p>
+            </div>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-category="all">Todos</button>
                 <button class="filter-btn" data-category="rosas">Rosas</button>
@@ -127,9 +139,9 @@
                     <div class="product-content">
                         <h2 class="product-title">Elegancia Blanca</h2>
                         <p class="product-description">Ramo sofisticado de rosas con envoltorio blanco elegante. Transmite pureza y amor sincero en presentación atemporal que conquista desde el primer vistazo siempre.</p>
-                        <div class="product-price">$138,000</div>
+                        <div class="product-price">$156,000</div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573171984779?text=Hola, me interesa Elegancia Blanca por $138,000. ¿Podrías darme más información?', 'elegancia_blanca_2')">
+                            onclick="trackWhatsAppLead('https://wa.me/573171984779?text=Hola, me interesa Elegancia Blanca por $156,000. ¿Podrías darme más información?', 'elegancia_blanca_2')">
                             Pedir Ahora
                         </button>
                     </div>
