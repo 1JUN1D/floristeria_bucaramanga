@@ -929,22 +929,81 @@
     </div>
 
     <script>
-        // Sistema de filtrado de productos
+        // Función para normalizar texto: quita tildes y pasa a minúsculas
+        function normalizeText(text) {
+            return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        }
+
+        // Sistema de filtrado y búsqueda de productos
         document.addEventListener('DOMContentLoaded', function () {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const productCards = document.querySelectorAll('.product-card');
+            const searchInput = document.getElementById('searchInput');
+            const clearSearch = document.getElementById('clearSearch');
+            const searchResults = document.getElementById('searchResults');
+
+            let activeCategory = 'all';
 
             function filterProducts(category) {
+                activeCategory = category;
+                applyFilters();
+            }
+
+            function applyFilters() {
+                const searchTerm = normalizeText(searchInput.value.trim());
+                let visibleCount = 0;
+
                 productCards.forEach(card => {
-                    if (category === 'all' || card.dataset.category === category) {
+                    const title = card.querySelector('.product-title, .special-title');
+                    const description = card.querySelector('.product-description, .special-description');
+                    const badge = card.querySelector('.category-badge');
+                    const cardCategory = card.dataset.category;
+
+                    const titleText = title ? normalizeText(title.textContent) : '';
+                    const descText = description ? normalizeText(description.textContent) : '';
+                    const badgeText = badge ? normalizeText(badge.textContent) : '';
+
+                    const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
+                    const matchesSearch = !searchTerm ||
+                        titleText.includes(searchTerm) ||
+                        descText.includes(searchTerm) ||
+                        badgeText.includes(searchTerm);
+
+                    if (matchesCategory && matchesSearch) {
                         card.style.display = 'block';
                         card.classList.add('fadeInUp');
+                        visibleCount++;
                     } else {
                         card.style.display = 'none';
                         card.classList.remove('fadeInUp');
                     }
                 });
+
+                // Mostrar mensaje de resultados
+                if (searchTerm) {
+                    searchResults.style.display = 'block';
+                    if (visibleCount === 0) {
+                        searchResults.textContent = 'No se encontraron productos para "' + searchInput.value.trim() + '"';
+                    } else {
+                        searchResults.textContent = visibleCount + ' producto' + (visibleCount !== 1 ? 's' : '') + ' encontrado' + (visibleCount !== 1 ? 's' : '');
+                    }
+                } else {
+                    searchResults.style.display = 'none';
+                }
+
+                // Mostrar/ocultar botón de limpiar
+                clearSearch.style.display = searchTerm ? 'block' : 'none';
             }
+
+            // Evento de búsqueda en tiempo real
+            searchInput.addEventListener('input', applyFilters);
+
+            // Botón para limpiar búsqueda
+            clearSearch.addEventListener('click', function () {
+                searchInput.value = '';
+                applyFilters();
+                searchInput.focus();
+            });
 
             filterButtons.forEach(button => {
                 button.addEventListener('click', function () {
