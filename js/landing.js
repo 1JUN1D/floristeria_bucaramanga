@@ -180,7 +180,7 @@ function orderWA(code, name, price) {
 
     const formattedPrice = formatCOP(price);
     const message = `Hola, me interesa el ramo *${code} - ${name}* con un precio de ${formattedPrice}. ¿Podrían darme más información?`;
-    window.open(`https://wa.me/573171984779?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/573151002917?text=${encodeURIComponent(message)}`, '_blank');
 }
 
 // --- WHATSAPP GENÉRICO + CONVERSIÓN ---
@@ -202,7 +202,7 @@ function contactWA(source, customMsg) {
     }
 
     const msg = customMsg || `Hola, estoy interesado/a en sus arreglos florales. Me podrían dar más información?`;
-    window.open(`https://wa.me/573171984779?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/573151002917?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // --- LIGHTBOX ---
