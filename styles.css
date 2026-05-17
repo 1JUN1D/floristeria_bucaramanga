@@ -270,6 +270,22 @@ body {
     margin-bottom: 1rem;
 }
 
+.product-old-price {
+    font-size: 0.95rem;
+    color: #b85a5a;
+    text-decoration: line-through;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.product-code-inline {
+    font-size: 0.8rem;
+    color: #BF9460;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
 .order-btn {
     width: 100%;
     background: linear-gradient(135deg, var(--accent), #a57244);

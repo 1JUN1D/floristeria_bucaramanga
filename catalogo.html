@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos - Larosset | Flores en Bucaramanga</title>
     <meta name="description"
-        content="Catálogo completo de Larosset en Bucaramanga. Rosas, girasoles, arreglos florales y más con entrega a domicilio.">
+        content="Catálogo completo de Larosset en Bucaramanga. Rosas, girasoles, arreglos florales y más con entrega a domicilio. ¡Aprovecha descuentos hasta del 20%!">
     <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon">
 
     <!-- Meta Pixel Code -->
@@ -77,6 +77,10 @@
             <h1>Nuestro Catálogo</h1>
             <p>Flores frescas y arreglos únicos para cada ocasión especial en Bucaramanga</p>
             <div class="decorative-line"></div>
+            <div class="promo-banner">
+                <span class="promo-badge">¡PROMOCIÓN!</span>
+                <span class="promo-text">Todos nuestros arreglos con descuento. Antes 20% más caros · Ahora al mejor precio</span>
+            </div>
         </div>
     </header>
 
@@ -90,813 +94,408 @@
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="m21 21-4.35-4.35"></path>
                     </svg>
-                    <input type="text" id="searchInput" class="search-input" placeholder="Buscar ramos por nombre... (ej: rosas, girasoles, corazón)">
-                    <button id="clearSearch" class="clear-search" style="display:none;">&times;</button>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Buscar por código (ej: 001) o por nombre (rosas, girasoles, amor)...">
+                    <button id="clearSearch" class="clear-search" aria-label="Limpiar búsqueda" style="display:none;">&times;</button>
                 </div>
                 <p id="searchResults" class="search-results-text" style="display:none;"></p>
             </div>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-category="all">Todos</button>
-                <button class="filter-btn" data-category="rosas">Rosas</button>
+                <button class="filter-btn" data-category="rojas">Rosas Rojas</button>
+                <button class="filter-btn" data-category="pastel">Rosas Pastel</button>
                 <button class="filter-btn" data-category="girasoles">Girasoles</button>
                 <button class="filter-btn" data-category="mixtas">Flores Mixtas</button>
-                <button class="filter-btn" data-category="chocolates">Rosas + Chocolates</button>
-                <button class="filter-btn" data-category="premium">Arreglos Premium</button>
-                <button class="filter-btn" data-category="funebres">Arreglos Fúnebres</button>
-                <button class="filter-btn" data-category="especiales">Ocasiones Especiales</button>
+                <button class="filter-btn" data-category="amarillas">Rosas Amarillas</button>
+                <button class="filter-btn" data-category="chocolates">Con Chocolates</button>
+                <button class="filter-btn" data-category="cajas">Cajas Especiales</button>
             </div>
         </div>
     </section>
 
-<!-- Catalog Section -->
+    <!-- Catalog Section -->
     <section class="catalog">
         <div class="container">
             <div class="products-grid">
 
-                <!-- PRODUCTO 1 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_1.webp')">
-                        <img src="assets/flores_bucaramanga_1.webp" alt="Amor en Caja">
+
+                
+                <!-- PRODUCTO 010 -->
+                <div class="product-card" data-category="mixtas pastel" data-code="010" data-keywords="mini lila clavel crema detalle pequeno cumpleanos">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Mini Ramo</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto10.webp', 'Mini Encanto Lila', '010')">
+                        <img src="assets/foto10.webp" alt="Mini Encanto Lila - Código 010" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Amor en Caja</h2>
-                        <p class="product-description">Hermosa caja decorativa con rosas frescas y globo de corazón. Diseño romántico perfecto para sorprender y expresar amor verdadero en cualquier ocasión especial memorable.</p>
-                        <div class="product-price">$275,000</div>
+                        <span class="product-code">Código 010</span>
+                        <h2 class="product-title">Mini Encanto Lila</h2>
+                        <p class="product-description">Mini bouquet con crisantemos lila, claveles rosados y rosas crema en papel rosa. Perfecto para detalles inesperados que dejan huella.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $129.000</span>
+                            <span class="price-now">Ahora: $107.500</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Amor en Caja por $275,000. ¿Podrías darme más información?', 'amor_caja_1')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 010 - Mini Encanto Lila por $107.500. ¿Podrías darme más información?', 'mini_encanto_lila_010')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 2 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_2.webp')">
-                        <img src="assets/flores_bucaramanga_2.webp" alt="Elegancia Blanca">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Elegancia Blanca</h2>
-                        <p class="product-description">Ramo sofisticado de rosas con envoltorio blanco elegante. Transmite pureza y amor sincero en presentación atemporal que conquista desde el primer vistazo siempre.</p>
-                        <div class="product-price">$171,600</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Elegancia Blanca por $171,600. ¿Podrías darme más información?', 'elegancia_blanca_2')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 3 -->
-                <div class="product-card" data-category="chocolates">
-                    <div class="category-badge">Rosas + Chocolates</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_3.webp')">
-                        <img src="assets/flores_bucaramanga_3.webp" alt="Dulzura Dorada">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Dulzura Dorada</h2>
-                        <p class="product-description">Arreglo exclusivo con rosas amarillas y rosadas acompañadas de chocolates selectos. La combinación perfecta entre belleza natural y sabor irresistible que conquista todos los sentidos.</p>
-                        <div class="product-price">$515,900</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Dulzura Dorada por $515,900. ¿Podrías darme más información?', 'dulzura_dorada_3')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 4 -->
-                <div class="product-card" data-category="chocolates">
-                    <div class="category-badge">Rosas + Fresas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_4.webp')">
-                        <img src="assets/flores_bucaramanga_4.webp" alt="Tentación Dorada">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Tentación Dorada</h2>
-                        <p class="product-description">Rosas amarillas frescas con fresas cubiertas de chocolate. Diseño gourmet que fusiona romance con sabor exquisito en presentación que deja huella inolvidable siempre.</p>
-                        <div class="product-price">$300,300</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Tentación Dorada por $300,300. ¿Podrías darme más información?', 'tentacion_dorada_4')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 5 -->
-                <div class="product-card" data-category="mixtas">
+                <!-- PRODUCTO 012 -->
+                <div class="product-card" data-category="mixtas" data-code="012" data-keywords="rosas gerbera crisantemo mix primavera verde rosa cumpleanos">
+                    <div class="discount-badge">-20%</div>
                     <div class="category-badge">Flores Mixtas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_5.webp')">
-                        <img src="assets/flores_bucaramanga_5.webp" alt="Jardín Solar">
+                    <div class="product-image" onclick="openImageModal('assets/foto12.webp', 'Primavera Rosa', '012')">
+                        <img src="assets/foto12.webp" alt="Primavera Rosa - Código 012" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Jardín Solar</h2>
-                        <p class="product-description">Arreglo variado con girasol protagonista y flores complementarias frescas. Transmite alegría, luz y buenos deseos en combinación natural que ilumina cualquier espacio especial.</p>
-                        <div class="product-price">$257,400</div>
+                        <span class="product-code">Código 012</span>
+                        <h2 class="product-title">Primavera Rosa</h2>
+                        <p class="product-description">Mix vibrante de rosas, gerberas y crisantemos en tonos rosa, verde y crema. Energía floral para alegrar cualquier día especial.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $129.000</span>
+                            <span class="price-now">Ahora: $107.500</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Jardín Solar por $257,400. ¿Podrías darme más información?', 'jardin_solar_5')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 012 - Primavera Rosa por $107.500. ¿Podrías darme más información?', 'primavera_rosa_012')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 6 -->
-                <div class="product-card" data-category="premium">
-                    <div class="category-badge">Arreglos Premium</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_6.webp')">
-                        <img src="assets/flores_bucaramanga_6.webp" alt="Abundancia Natural">
+                <!-- PRODUCTO 009 -->
+                <div class="product-card" data-category="pastel mixtas" data-code="009" data-keywords="rosas pastel gerbera gypsophila romantico tulipan rosa">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rosas Pastel</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto9.webp', 'Brisa Romántica', '009')">
+                        <img src="assets/foto9.webp" alt="Brisa Romántica - Código 009" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Abundancia Natural</h2>
-                        <p class="product-description">Ramo grande espectacular combinado con frutas frescas selectas. Diseño premium que fusiona belleza floral con frescura frutal en presentación de máximo impacto visual memorable.</p>
-                        <div class="product-price">$618,200</div>
+                        <span class="product-code">Código 009</span>
+                        <h2 class="product-title">Brisa Romántica</h2>
+                        <p class="product-description">Rosas pastel, gerberas blancas, gypsophila y un tulipán envueltos en papel rosa con lazo. Frescura y ternura para sorprender a quien amas.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $135.000</span>
+                            <span class="price-now">Ahora: $112.500</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Abundancia Natural por $618,200. ¿Podrías darme más información?', 'abundancia_natural_6')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 009 - Brisa Romántica por $112.500. ¿Podrías darme más información?', 'brisa_romantica_009')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 7 -->
-                <div class="product-card" data-category="premium">
-                    <div class="category-badge">Lirios</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_7.webp')">
-                        <img src="assets/flores_bucaramanga_7.webp" alt="Pureza Majestuosa">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Pureza Majestuosa</h2>
-                        <p class="product-description">Ramo abundante de lirios frescos aromáticos. Transmite elegancia, pureza y admiración profunda en presentación sofisticada que conquista con belleza natural absoluta siempre.</p>
-                        <div class="product-price">$601,700</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Pureza Majestuosa por $601,700. ¿Podrías darme más información?', 'pureza_majestuosa_7')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 8 -->
-                <div class="product-card" data-category="premium">
-                    <div class="category-badge">Rosas en Base</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_8.webp')">
-                        <img src="assets/flores_bucaramanga_8.webp" alt="Corona Imperial">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Corona Imperial</h2>
-                        <p class="product-description">Ramo grande de rosas en base circular elegante. Diseño majestuoso que simboliza amor eterno y admiración suprema en presentación de máxima distinción natural memorable.</p>
-                        <div class="product-price">$653,400</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Corona Imperial por $653,400. ¿Podrías darme más información?', 'corona_imperial_8')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 9 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas Amarillas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_9.webp')">
-                        <img src="assets/flores_bucaramanga_9.webp" alt="Luz en Caja">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Luz en Caja</h2>
-                        <p class="product-description">Caja elegante con rosas amarillas frescas radiantes. Transmite amistad, gratitud y alegría en presentación sofisticada que ilumina espacios y corazones con luz natural pura.</p>
-                        <div class="product-price">$292,600</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Luz en Caja por $292,600. ¿Podrías darme más información?', 'luz_caja_9')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 10 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas Amarillas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_10.webp')">
-                        <img src="assets/flores_bucaramanga_10.webp" alt="Esencia Dorada">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Esencia Dorada</h2>
-                        <p class="product-description">Caja decorativa con rosas amarillas que irradian energía positiva. Perfecto para expresar cariño sincero y buenos deseos en presentación elegante que nunca falla siempre.</p>
-                        <div class="product-price">$223,300</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Esencia Dorada por $223,300. ¿Podrías darme más información?', 'esencia_dorada_10')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 11 -->
-                <div class="product-card" data-category="premium">
-                    <div class="category-badge">Arreglos Premium</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_11.webp')">
-                        <img src="assets/flores_bucaramanga_11.webp" alt="Círculo de Amor">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Círculo de Amor</h2>
-                        <p class="product-description">Arreglo circular espectacular de rosas con hojas verdes frescas. Diseño sofisticado que simboliza amor eterno y perfección natural en presentación de máximo impacto visual memorable.</p>
-                        <div class="product-price">$944,900</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Círculo de Amor por $944,900. ¿Podrías darme más información?', 'circulo_amor_11')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 12 -->
-                <div class="product-card" data-category="chocolates">
-                    <div class="category-badge">Rosas + Fresas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_12.webp')">
-                        <img src="assets/flores_bucaramanga_12.webp" alt="Pasión Gourmet">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Pasión Gourmet</h2>
-                        <p class="product-description">Caja de rosas rojas con fresas cubiertas de chocolate. La combinación perfecta entre romance intenso y sabor exquisito que conquista corazón y paladar simultáneamente siempre.</p>
-                        <div class="product-price">$292,600</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Pasión Gourmet por $292,600. ¿Podrías darme más información?', 'pasion_gourmet_12')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 13 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Arreglos en Base</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_13.webp')">
-                        <img src="assets/flores_bucaramanga_13.webp" alt="Dualidad Perfecta">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Dualidad Perfecta</h2>
-                        <p class="product-description">Rosas blancas y rojas en base circular elegante. Combina pureza con pasión en armonía perfecta que transmite amor completo y verdadero en presentación sofisticada memorable.</p>
-                        <div class="product-price">$257,400</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Dualidad Perfecta por $257,400. ¿Podrías darme más información?', 'dualidad_perfecta_13')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 14 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Arreglos en Base</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_14.webp')">
-                        <img src="assets/flores_bucaramanga_14.webp" alt="Fusión Vibrante">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Fusión Vibrante</h2>
-                        <p class="product-description">Rosas fucsia y rosadas en base circular decorativa. Diseño alegre que transmite amor juvenil y energía positiva en presentación que roba miradas desde el primer instante visual.</p>
-                        <div class="product-price">$232,100</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Fusión Vibrante por $232,100. ¿Podrías darme más información?', 'fusion_vibrante_14')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 15 -->
-                <div class="product-card" data-category="especiales">
-                    <div class="category-badge">Rosas + Champagne</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_15.webp')">
-                        <img src="assets/flores_bucaramanga_15.webp" alt="Celebración Rosa">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Celebración Rosa</h2>
-                        <p class="product-description">Rosas rosadas en caja elegante con champagne. Diseño sofisticado perfecto para celebrar momentos especiales con lujo, romance y distinción absoluta que impacta siempre.</p>
-                        <div class="product-price">$309,100</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Celebración Rosa por $309,100. ¿Podrías darme más información?', 'celebracion_rosa_15')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 16 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas + Lirios</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_16.webp')">
-                        <img src="assets/flores_bucaramanga_16.webp" alt="Armonía Celestial">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Armonía Celestial</h2>
-                        <p class="product-description">Rosas blancas combinadas con lirios aromáticos. Transmite pureza suprema y elegancia natural en arreglo que simboliza amor sereno y profundo en presentación atemporal memorable.</p>
-                        <div class="product-price">$343,200</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Armonía Celestial por $343,200. ¿Podrías darme más información?', 'armonia_celestial_16')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 17 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Ramos de Rosas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_17.webp')">
-                        <img src="assets/flores_bucaramanga_17.webp" alt="Clásico Eterno">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Clásico Eterno</h2>
-                        <p class="product-description">Ramo tradicional de rosas frescas envuelto con elegancia. Belleza atemporal que nunca falla para expresar amor sincero en cualquier ocasión especial del corazón siempre.</p>
-                        <div class="product-price">$343,200</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Clásico Eterno por $343,200. ¿Podrías darme más información?', 'clasico_eterno_17')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 18 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas Especiales</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_18.webp')">
-                        <img src="assets/flores_bucaramanga_18.webp" alt="Cielo y Nube">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Cielo y Nube</h2>
-                        <p class="product-description">Ramo único de rosas blancas y azules. Combinación especial que transmite serenidad celestial y amor puro en presentación original que conquista con belleza natural diferente.</p>
-                        <div class="product-price">$266,200</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Cielo y Nube por $266,200. ¿Podrías darme más información?', 'cielo_nube_18')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 19 -->
-                <div class="product-card" data-category="premium">
-                    <div class="category-badge">Regalo Espectacular</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_19.webp')">
-                        <img src="assets/flores_bucaramanga_19.webp" alt="Grandeza Absoluta">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Grandeza Absoluta</h2>
-                        <p class="product-description">Ramo de girasoles + corazones rojos en forma de corazón + peluche tamaño persona. El regalo más espectacular para sorprender en grande y dejar huella imborrable eternamente.</p>
-                        <div class="product-price">$1,498,200</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Grandeza Absoluta por $1,498,200. ¿Podrías darme más información?', 'grandeza_absoluta_19')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 20 -->
-                <div class="product-card" data-category="chocolates">
-                    <div class="category-badge">Rosas + Peluche</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_20.webp')">
-                        <img src="assets/flores_bucaramanga_20.webp" alt="Ternura Dulce">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Ternura Dulce</h2>
-                        <p class="product-description">Ramo de rosas rosadas con chocolates selectos y peluche de vaquita. Combina romance, dulzura y ternura en regalo completo que conquista todos los sentidos emocionales.</p>
-                        <div class="product-price">$309,100</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Ternura Dulce por $309,100. ¿Podrías darme más información?', 'ternura_dulce_20')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 21 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Mixtas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_21.webp')">
-                        <img src="assets/flores_bucaramanga_21.webp" alt="Contraste Elegante">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Contraste Elegante</h2>
-                        <p class="product-description">Rosas rojas y claveles blancos en base circular sofisticada. Diseño que fusiona pasión con pureza en presentación elegante que transmite amor completo y equilibrado siempre.</p>
-                        <div class="product-price">$515,900</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Contraste Elegante por $515,900. ¿Podrías darme más información?', 'contraste_elegante_21')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 22 -->
-                <div class="product-card" data-category="chocolates">
-                    <div class="category-badge">Rosas + Chocolates</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_22.webp')">
-                        <img src="assets/flores_bucaramanga_22.webp" alt="Energía Dulce">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Energía Dulce</h2>
-                        <p class="product-description">Rosas naranjas con chocolates en base circular. Transmite vitalidad, alegría y sabor en combinación vibrante que ilumina espacios y corazones con energía positiva natural.</p>
-                        <div class="product-price">$223,300</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Energía Dulce por $223,300. ¿Podrías darme más información?', 'energia_dulce_22')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 23 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Variadas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_23.webp')">
-                        <img src="assets/flores_bucaramanga_23.webp" alt="Jardín Encantado">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Jardín Encantado</h2>
-                        <p class="product-description">Ramo variado con flores frescas en combinación armoniosa. Transmite alegría natural y buenos deseos en presentación que celebra la belleza de la diversidad floral siempre.</p>
-                        <div class="product-price">$403,700</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Jardín Encantado por $403,700. ¿Podrías darme más información?', 'jardin_encantado_23')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 24 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores en Jarrón</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_24.webp')">
-                        <img src="assets/flores_bucaramanga_24.webp" alt="Elegancia en Cristal">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Elegancia en Cristal</h2>
-                        <p class="product-description">Ramo variado en jarrón elegante incluido. Perfecto para decorar espacios con belleza natural que permanece y embellece con sofisticación atemporal que nunca falla.</p>
-                        <div class="product-price">$326,700</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Elegancia en Cristal por $326,700. ¿Podrías darme más información?', 'elegancia_cristal_24')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 25 -->
-                <div class="product-card" data-category="especiales">
-                    <div class="category-badge">Arreglos en Canasta</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_25.webp')">
-                        <img src="assets/flores_bucaramanga_25.webp" alt="Canasta Romántica">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Canasta Romántica</h2>
-                        <p class="product-description">Ramo de rosas con flores complementarias en canasta decorativa. Diseño campestre que transmite amor natural y auténtico en presentación encantadora que conquista con simplicidad bella.</p>
-                        <div class="product-price">$515,900</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Canasta Romántica por $515,900. ¿Podrías darme más información?', 'canasta_romantica_25')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 26 -->
-                <div class="product-card" data-category="chocolates">
-                    <div class="category-badge">Rosas + Fresas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_26.webp')">
-                        <img src="assets/flores_bucaramanga_26.webp" alt="Corazón Gourmet">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Corazón Gourmet</h2>
-                        <p class="product-description">Ramo de rosas blancas y rosadas con fresas cubiertas de chocolate en forma de corazón. Romance y sabor unidos en presentación que expresa amor dulce eternamente.</p>
-                        <div class="product-price">$317,900</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Corazón Gourmet por $317,900. ¿Podrías darme más información?', 'corazon_gourmet_26')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 27 -->
-                <div class="product-card" data-category="funebres">
-                    <div class="category-badge">Arreglos Fúnebres</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_27.webp')">
-                        <img src="assets/flores_bucaramanga_27.webp" alt="Tributo Eterno">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Tributo Eterno</h2>
-                        <p class="product-description">Arreglo fúnebre elegante con flores blancas seleccionadas. Diseño respetuoso que honra la memoria y transmite paz, amor y recuerdo eterno en presentación solemne digna.</p>
-                        <div class="product-price">$618,200</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Tributo Eterno por $618,200. ¿Podrías darme más información?', 'tributo_eterno_27')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 28 -->
-                <div class="product-card" data-category="funebres">
-                    <div class="category-badge">Arreglos Fúnebres</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_28.webp')">
-                        <img src="assets/flores_bucaramanga_28.webp" alt="Memoria Sagrada">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Memoria Sagrada</h2>
-                        <p class="product-description">Arreglo fúnebre sofisticado con flores frescas en tonos serenos. Transmite respeto profundo y amor eterno en presentación que honra con dignidad y belleza natural.</p>
-                        <div class="product-price">$532,400</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Memoria Sagrada por $532,400. ¿Podrías darme más información?', 'memoria_sagrada_28')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 29 -->
-                <div class="product-card" data-category="funebres">
-                    <div class="category-badge">Arreglos Fúnebres</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_29.webp')">
-                        <img src="assets/flores_bucaramanga_29.webp" alt="Paz Eterna">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Paz Eterna</h2>
-                        <p class="product-description">Arreglo fúnebre delicado con flores blancas puras. Diseño que simboliza descanso eterno y amor que trasciende en presentación respetuosa que consuela corazones siempre.</p>
-                        <div class="product-price">$300,300</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Paz Eterna por $300,300. ¿Podrías darme más información?', 'paz_eterna_29')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 30 -->
-                <div class="product-card" data-category="funebres">
-                    <div class="category-badge">Arreglos Fúnebres</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_30.webp')">
-                        <img src="assets/flores_bucaramanga_30.webp" alt="Recuerdo Eterno">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Recuerdo Eterno</h2>
-                        <p class="product-description">Arreglo fúnebre majestuoso con flores premium seleccionadas. Transmite honor supremo y respeto profundo en presentación que celebra vida vivida con amor y dignidad absoluta.</p>
-                        <div class="product-price">$653,400</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Recuerdo Eterno por $653,400. ¿Podrías darme más información?', 'recuerdo_eterno_30')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 31 -->
-                <div class="product-card" data-category="funebres">
-                    <div class="category-badge">Arreglos Fúnebres</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_31.webp')">
-                        <img src="assets/flores_bucaramanga_31.webp" alt="Amor Perpetuo">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Amor Perpetuo</h2>
-                        <p class="product-description">Arreglo fúnebre elegante con flores en tonos suaves. Diseño que transmite amor que permanece más allá del tiempo en presentación respetuosa que honra memorias eternamente.</p>
-                        <div class="product-price">$515,900</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Amor Perpetuo por $515,900. ¿Podrías darme más información?', 'amor_perpetuo_31')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 32 -->
-                <div class="product-card" data-category="funebres">
-                    <div class="category-badge">Arreglos Fúnebres</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_32.webp')">
-                        <img src="assets/flores_bucaramanga_32.webp" alt="Serenidad Final">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Serenidad Final</h2>
-                        <p class="product-description">Arreglo fúnebre sofisticado con flores blancas y verdes. Transmite paz profunda y descanso eterno en presentación que consuela con belleza natural serena y dignificante.</p>
-                        <div class="product-price">$601,700</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Serenidad Final por $601,700. ¿Podrías darme más información?', 'serenidad_final_32')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 33 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Mixtas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_33.webp')">
-                        <img src="assets/flores_bucaramanga_33.webp" alt="Jardín Rosa">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Jardín Rosa</h2>
-                        <p class="product-description">Ramo de flores rosadas variadas con rosas frescas. Transmite ternura y amor delicado en presentación natural que conquista con belleza suave y femenina siempre encantadora.</p>
-                        <div class="product-price">$155,100</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Jardín Rosa por $155,100. ¿Podrías darme más información?', 'jardin_rosa_33')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 34 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Variadas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_34.webp')">
-                        <img src="assets/flores_bucaramanga_34.webp" alt="Primavera Natural">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Primavera Natural</h2>
-                        <p class="product-description">Ramo variado con flores frescas en combinación primaveral. Transmite alegría renovada y buenos deseos en presentación que celebra vida y belleza natural con frescura absoluta.</p>
-                        <div class="product-price">$309,100</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Primavera Natural por $309,100. ¿Podrías darme más información?', 'primavera_natural_34')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 35 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Variadas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_35.webp')">
-                        <img src="assets/flores_bucaramanga_35.webp" alt="Pureza Mixta">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Pureza Mixta</h2>
-                        <p class="product-description">Ramo de flores blancas y rosadas en armonía delicada. Combina pureza con ternura en presentación que transmite amor sincero y buenos deseos con elegancia natural suave.</p>
-                        <div class="product-price">$257,400</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Pureza Mixta por $257,400. ¿Podrías darme más información?', 'pureza_mixta_35')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 36 -->
-                <div class="product-card" data-category="girasoles">
+                <!-- PRODUCTO 013 -->
+                <div class="product-card" data-category="girasoles pastel" data-code="013" data-keywords="girasol rosado pastel gypsophila cumpleanos ternura">
+                    <div class="discount-badge">-20%</div>
                     <div class="category-badge">Girasoles</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_36.webp')">
-                        <img src="assets/flores_bucaramanga_36.webp" alt="Luz Compacta">
+                    <div class="product-image" onclick="openImageModal('assets/foto13.webp', 'Girasol Rosa Pastel', '013')">
+                        <img src="assets/foto13.webp" alt="Girasol Rosa Pastel - Código 013" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Luz Compacta</h2>
-                        <p class="product-description">Ramo de girasoles radiantes que iluminan cualquier espacio. Transmite alegría, esperanza y energía positiva en presentación que celebra vida con luz natural pura siempre.</p>
-                        <div class="product-price">$206,800</div>
+                        <span class="product-code">Código 013</span>
+                        <h2 class="product-title">Girasol Rosa Pastel</h2>
+                        <p class="product-description">Girasoles con gypsophila y rosas pastel envueltos en papel rosa con lazos blancos. Ternura y alegría reunidas en un mismo ramo.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $135.000</span>
+                            <span class="price-now">Ahora: $112.500</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Luz Compacta por $206,800. ¿Podrías darme más información?', 'luz_compacta_36')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 013 - Girasol Rosa Pastel por $112.500. ¿Podrías darme más información?', 'girasol_rosa_pastel_013')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 37 -->
-                <div class="product-card" data-category="girasoles">
+                <!-- PRODUCTO 014 -->
+                <div class="product-card" data-category="amarillas" data-code="014" data-keywords="rosas amarillas rustico craft amistad eucalipto cumpleanos">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rosas Amarillas</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto14.webp', 'Sol Amarillo Rústico', '014')">
+                        <img src="assets/foto14.webp" alt="Sol Amarillo Rústico - Código 014" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-code">Código 014</span>
+                        <h2 class="product-title">Sol Amarillo Rústico</h2>
+                        <p class="product-description">Rosas amarillas con eucalipto y flores blancas envueltas en papel craft natural. Estilo rústico ideal para celebrar la amistad y la alegría.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $142.500</span>
+                            <span class="price-now">Ahora: $118.750</span>
+                        </div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 014 - Sol Amarillo Rústico por $118.750. ¿Podrías darme más información?', 'sol_amarillo_014')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+                <!-- PRODUCTO 006 -->
+                <div class="product-card" data-category="rojas mixtas" data-code="006" data-keywords="rosas rojas blancas mix amor clasico tarjeta">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rojas y Blancas</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto6.webp', 'Rojo y Blanco Eterno', '006')">
+                        <img src="assets/foto6.webp" alt="Rojo y Blanco Eterno - Código 006" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-code">Código 006</span>
+                        <h2 class="product-title">Rojo y Blanco Eterno</h2>
+                        <p class="product-description">Ramo clásico con rosas rojas y blancas, follaje fresco y tarjeta dedicada. La combinación atemporal que nunca falla para conquistar.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $150.000</span>
+                            <span class="price-now">Ahora: $125.000</span>
+                        </div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 006 - Rojo y Blanco Eterno por $125.000. ¿Podrías darme más información?', 'rojo_blanco_eterno_006')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+                <!-- PRODUCTO 015 -->
+                <div class="product-card" data-category="pastel mixtas" data-code="015" data-keywords="tulipan pastel rosas gerbera naranja aniversario romantico">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rosas Pastel</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto15.webp', 'Tulipán Pastel', '015')">
+                        <img src="assets/foto15.webp" alt="Tulipán Pastel - Código 015" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-code">Código 015</span>
+                        <h2 class="product-title">Tulipán Pastel</h2>
+                        <p class="product-description">Tulipán rosa, gerberas naranja y rosas pastel envueltos en papel rosado con lazo satinado. Elegancia romántica y delicada para fechas inolvidables.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $153.000</span>
+                            <span class="price-now">Ahora: $127.500</span>
+                        </div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 015 - Tulipán Pastel por $127.500. ¿Podrías darme más información?', 'tulipan_pastel_015')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+                <!-- PRODUCTO 016 -->
+                <div class="product-card" data-category="rojas" data-code="016" data-keywords="rosas rojas amor san valentin love you forever periodico">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rosas Rojas</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto16.webp', 'Love You Forever', '016')">
+                        <img src="assets/foto16.webp" alt="Love You Forever - Código 016" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-code">Código 016</span>
+                        <h2 class="product-title">Love You Forever</h2>
+                        <p class="product-description">Rosas rojas envueltas en papel impreso 'Love You Forever' con eucalipto y tarjeta dedicada. Una declaración eterna en cada pétalo y palabra.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $172.500</span>
+                            <span class="price-now">Ahora: $143.750</span>
+                        </div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 016 - Love You Forever por $143.750. ¿Podrías darme más información?', 'love_you_forever_016')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+                <!-- PRODUCTO 011 -->
+                <div class="product-card" data-category="girasoles rojas" data-code="011" data-keywords="girasol rosas rojas negro cumpleanos amor lazo rojo">
+                    <div class="discount-badge">-20%</div>
                     <div class="category-badge">Girasoles</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_37.webp')">
-                        <img src="assets/flores_bucaramanga_37.webp" alt="Sol Radiante">
+                    <div class="product-image" onclick="openImageModal('assets/foto11.webp', 'Girasol Black & Red', '011')">
+                        <img src="assets/foto11.webp" alt="Girasol Black & Red - Código 011" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Sol Radiante</h2>
-                        <p class="product-description">Ramo abundante de girasoles frescos luminosos. Diseño que desborda alegría y buenos deseos en presentación que ilumina corazones con energía solar natural desbordante siempre.</p>
-                        <div class="product-price">$257,400</div>
+                        <span class="product-code">Código 011</span>
+                        <h2 class="product-title">Girasol Black &amp; Red</h2>
+                        <p class="product-description">Girasol grande con rosas rojas y papel negro, terminado con un lazo rojo brillante. Estilo audaz y luminoso para regalos con carácter.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $180.000</span>
+                            <span class="price-now">Ahora: $150.000</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Sol Radiante por $257,400. ¿Podrías darme más información?', 'sol_radiante_37')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 011 - Girasol Black and Red por $150.000. ¿Podrías darme más información?', 'girasol_black_red_011')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 38 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Claveles</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_38.webp')">
-                        <img src="assets/flores_bucaramanga_38.webp" alt="Tradición Eterna">
+                <!-- PRODUCTO 008 -->
+                <div class="product-card" data-category="mixtas" data-code="008" data-keywords="gerbera crisantemo clavel mix primavera rosa lila cumpleanos">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Flores Mixtas</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto8.webp', 'Jardín Primaveral', '008')">
+                        <img src="assets/foto8.webp" alt="Jardín Primaveral - Código 008" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Tradición Eterna</h2>
-                        <p class="product-description">Ramo clásico de claveles frescos aromáticos. Belleza atemporal que representa amor duradero y admiración profunda en presentación tradicional que nunca pasa de moda.</p>
-                        <div class="product-price">$214,500</div>
+                        <span class="product-code">Código 008</span>
+                        <h2 class="product-title">Jardín Primaveral</h2>
+                        <p class="product-description">Mix abundante de gerberas, crisantemos, claveles y rosas en tonos rosa, lila y verde. Un jardín completo cuidadosamente compuesto en un solo ramo.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $187.500</span>
+                            <span class="price-now">Ahora: $156.250</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Tradición Eterna por $214,500. ¿Podrías darme más información?', 'tradicion_eterna_38')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 008 - Jardín Primaveral por $156.250. ¿Podrías darme más información?', 'jardin_primaveral_008')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 39 -->
-                <div class="product-card" data-category="premium">
-                    <div class="category-badge">Rosas Premium</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_39.webp')">
-                        <img src="assets/flores_bucaramanga_39.webp" alt="Sofisticación Rosa">
+                <!-- PRODUCTO 005 -->
+                <div class="product-card" data-category="cajas chocolates pastel" data-code="005" data-keywords="caja rosas rosadas lirio ferrero chocolate premium aniversario">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Caja Premium</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto5.webp', 'Caja Lirio y Rosas Rosadas', '005')">
+                        <img src="assets/foto5.webp" alt="Caja Lirio y Rosas Rosadas - Código 005" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Sofisticación Rosa</h2>
-                        <p class="product-description">Ramo premium de rosas rosadas y blancas frescas. Diseño sofisticado que transmite amor refinado y elegancia suprema en presentación de máxima distinción natural memorable siempre.</p>
-                        <div class="product-price">$515,900</div>
+                        <span class="product-code">Código 005</span>
+                        <h2 class="product-title">Caja Lirio y Rosas Rosadas</h2>
+                        <p class="product-description">Caja blanca con rosas rosadas, lirio fresco, Ferrero Rocher y tarjeta personalizada. Lujo floral diseñado para fechas verdaderamente especiales.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $201.000</span>
+                            <span class="price-now">Ahora: $167.500</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Sofisticación Rosa por $515,900. ¿Podrías darme más información?', 'sofisticacion_rosa_39')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 005 - Caja Lirio y Rosas Rosadas por $167.500. ¿Podrías darme más información?', 'caja_lirio_rosas_005')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 40 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Variadas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_40.webp')">
-                        <img src="assets/flores_bucaramanga_40.webp" alt="Campo Alegre">
+                <!-- PRODUCTO 003 -->
+                <div class="product-card" data-category="rojas" data-code="003" data-keywords="rosas rojas elegante aniversario premium negro dorado">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rosas Rojas</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto3.webp', 'Elegancia Negra y Oro', '003')">
+                        <img src="assets/foto3.webp" alt="Elegancia Negra y Oro - Código 003" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Campo Alegre</h2>
-                        <p class="product-description">Ramo variado con flores frescas en combinación campestre. Transmite alegría natural y espontánea en presentación que celebra belleza simple y auténtica de la naturaleza siempre.</p>
-                        <div class="product-price">$146,300</div>
+                        <span class="product-code">Código 003</span>
+                        <h2 class="product-title">Elegancia Negra y Oro</h2>
+                        <p class="product-description">Ramo de rosas rojas envuelto en papel negro y dorado con gypsophila blanca. Diseño sofisticado ideal para aniversarios y momentos memorables.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $202.500</span>
+                            <span class="price-now">Ahora: $168.750</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Campo Alegre por $146,300. ¿Podrías darme más información?', 'campo_alegre_40')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 003 - Elegancia Negra y Oro por $168.750. ¿Podrías darme más información?', 'elegancia_negra_oro_003')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 41 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas Especiales</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_41.webp')">
-                        <img src="assets/flores_bucaramanga_41.webp" alt="Capullo Rosado">
+                <!-- PRODUCTO 004 -->
+                <div class="product-card" data-category="girasoles chocolates" data-code="004" data-keywords="girasol girasoles ferrero chocolate cumpleanos amarillo">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Girasoles + Chocolates</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto4.webp', 'Sol y Chocolate', '004')">
+                        <img src="assets/foto4.webp" alt="Sol y Chocolate - Código 004" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Capullo Rosado</h2>
-                        <p class="product-description">Ramo de rosas blancas con puntas rosadas cerradas. Belleza delicada que simboliza amor floreciente y promesas por cumplir en presentación única que conquista con ternura pura.</p>
-                        <div class="product-price">$317,900</div>
+                        <span class="product-code">Código 004</span>
+                        <h2 class="product-title">Sol y Chocolate</h2>
+                        <p class="product-description">Girasoles vibrantes con rosas rojas y bombones Ferrero envueltos en papel negro y lazo dorado. Alegría floral con un toque dulce irresistible.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $211.500</span>
+                            <span class="price-now">Ahora: $176.250</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Capullo Rosado por $317,900. ¿Podrías darme más información?', 'capullo_rosado_41')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 004 - Sol y Chocolate por $176.250. ¿Podrías darme más información?', 'sol_chocolate_004')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 42 -->
-                <div class="product-card" data-category="girasoles">
-                    <div class="category-badge">Girasoles Mixtos</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_42.webp')">
-                        <img src="assets/flores_bucaramanga_42.webp" alt="Luz Mixta">
+                <!-- PRODUCTO 001 -->
+                <div class="product-card" data-category="rojas" data-code="001" data-keywords="rosas rojas amor aniversario premium bouquet">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rosas Rojas</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto1.webp', 'Pasión en Rojo', '001')">
+                        <img src="assets/foto1.webp" alt="Pasión en Rojo - Código 001" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Luz Mixta</h2>
-                        <p class="product-description">Ramo de girasoles con flores complementarias variadas. Transmite alegría luminosa en presentación que combina energía solar con belleza natural diversa y encantadora siempre.</p>
-                        <div class="product-price">$155,100</div>
+                        <span class="product-code">Código 001</span>
+                        <h2 class="product-title">Pasión en Rojo</h2>
+                        <p class="product-description">Bouquet abundante con más de veinticinco rosas rojas y una rosa dorada al centro. Detalles en perlas, follaje verde y envoltura negra elegante.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $216.000</span>
+                            <span class="price-now">Ahora: $180.000</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Luz Mixta por $155,100. ¿Podrías darme más información?', 'luz_mixta_42')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 001 - Pasión en Rojo por $180.000. ¿Podrías darme más información?', 'pasion_rojo_001')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 43 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Variadas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_43.webp')">
-                        <img src="assets/flores_bucaramanga_43.webp" alt="Serenidad Natural">
+                <!-- PRODUCTO 017 -->
+                <div class="product-card" data-category="mixtas pastel" data-code="017" data-keywords="lirio rosas crema blanco elegante aniversario premium">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Lirios y Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto17.webp', 'Lirio y Rosas Crema', '017')">
+                        <img src="assets/foto17.webp" alt="Lirio y Rosas Crema - Código 017" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Serenidad Natural</h2>
-                        <p class="product-description">Ramo variado de flores lilas y blancas frescas. Transmite paz serena y amor tranquilo en presentación delicada que conquista con belleza suave y armoniosa naturalmente siempre.</p>
-                        <div class="product-price">$137,500</div>
+                        <span class="product-code">Código 017</span>
+                        <h2 class="product-title">Lirio y Rosas Crema</h2>
+                        <p class="product-description">Lirios blancos con rosas crema y gypsophila envueltos en papel rosa y dorado. Suavidad y elegancia reunidas en una sola pieza inolvidable.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $216.000</span>
+                            <span class="price-now">Ahora: $180.000</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Serenidad Natural por $137,500. ¿Podrías darme más información?', 'serenidad_natural_43')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 017 - Lirio y Rosas Crema por $180.000. ¿Podrías darme más información?', 'lirio_rosas_crema_017')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 44 -->
-                <div class="product-card" data-category="mixtas">
-                    <div class="category-badge">Flores Variadas</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_44.webp')">
-                        <img src="assets/flores_bucaramanga_44.webp" alt="Frescura Primaveral">
+                <!-- PRODUCTO 007 -->
+                <div class="product-card" data-category="pastel" data-code="007" data-keywords="rosas pastel orquidea cymbidium premium aniversario dorado">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Rosas Pastel</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto7.webp', 'Dulce Pastel con Orquídea', '007')">
+                        <img src="assets/foto7.webp" alt="Dulce Pastel con Orquídea - Código 007" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Frescura Primaveral</h2>
-                        <p class="product-description">Ramo variado con flores frescas en tonos primaverales. Transmite renovación y alegría natural en presentación que celebra belleza espontánea de la naturaleza con vitalidad absoluta.</p>
-                        <div class="product-price">$257,400</div>
+                        <span class="product-code">Código 007</span>
+                        <h2 class="product-title">Dulce Pastel con Orquídea</h2>
+                        <p class="product-description">Rosas pastel y una orquídea cymbidium envueltas en papel dorado translúcido. Romanticismo en su forma más fina y sofisticada.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $222.000</span>
+                            <span class="price-now">Ahora: $185.000</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Frescura Primaveral por $257,400. ¿Podrías darme más información?', 'frescura_primaveral_44')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 007 - Dulce Pastel con Orquídea por $185.000. ¿Podrías darme más información?', 'dulce_pastel_orquidea_007')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
-
-                <!-- PRODUCTO 45 -->
-                <div class="product-card" data-category="premium">
-                    <div class="category-badge">Arreglo Monumental</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_45.webp')">
-                        <img src="assets/flores_bucaramanga_45.webp" alt="Corazón Monumental">
+                <!-- PRODUCTO 002 -->
+                <div class="product-card" data-category="cajas chocolates" data-code="002" data-keywords="caja chocolate ferrero rocher amor rosas rojas">
+                    <div class="discount-badge">-20%</div>
+                    <div class="category-badge">Caja con Chocolates</div>
+                    <div class="product-image" onclick="openImageModal('assets/foto2.webp', 'Caja Amor Ferrero', '002')">
+                        <img src="assets/foto2.webp" alt="Caja Amor Ferrero - Código 002" loading="lazy">
+                        <div class="zoom-hint">Toca para ampliar</div>
                     </div>
                     <div class="product-content">
-                        <h2 class="product-title">Corazón Monumental</h2>
-                        <p class="product-description">Ramo gigante en forma de corazón con base de rosas blancas, rosadas y lirios. El arreglo más espectacular para declaraciones de amor que merecen ser eternas e inolvidables siempre.</p>
-                        <div class="product-price">$2,750,000</div>
+                        <span class="product-code">Código 002</span>
+                        <h2 class="product-title">Caja Amor Ferrero</h2>
+                        <p class="product-description">Caja negra con rosas rojas, hypericum y bombones Ferrero Rocher. Detalle gourmet con lazo rojo perfecto para enamorar.</p>
+                        <div class="price-block">
+                            <span class="price-old">Antes: $232.500</span>
+                            <span class="price-now">Ahora: $193.750</span>
+                        </div>
                         <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Corazón Monumental por $2,750,000. ¿Podrías darme más información?', 'corazon_monumental_45')">
-                            Pedir Ahora
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PRODUCTO 46 -->
-                <div class="product-card" data-category="rosas">
-                    <div class="category-badge">Rosas en Caja Corazón</div>
-                    <div class="product-image" onclick="openImageModal('assets/flores_bucaramanga_46.webp')">
-                        <img src="assets/flores_bucaramanga_46.webp" alt="Corazón Premium">
-                    </div>
-                    <div class="product-content">
-                        <h2 class="product-title">Corazón Premium</h2>
-                        <p class="product-description">Caja de rosas rosadas y blancas en forma de corazón. Diseño sofisticado que simboliza amor profundo y sincero en presentación elegante que conquista corazones desde el primer instante.</p>
-                        <div class="product-price">$430,100</div>
-                        <button class="product-button"
-                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa Corazón Premium por $430,100. ¿Podrías darme más información?', 'corazon_premium_46')">
+                            onclick="trackWhatsAppLead('https://wa.me/573170518077?text=Hola, me interesa el arreglo 002 - Caja Amor Ferrero por $193.750. ¿Podrías darme más información?', 'caja_amor_ferrero_002')">
                             Pedir Ahora
                         </button>
                     </div>
                 </div>
 
                 <!-- TARJETA FINAL - RAMOS PERSONALIZADOS -->
-                <div class="product-card special-card" data-category="especiales">
+                <div class="product-card special-card" data-category="all especiales" data-code="000" data-keywords="personalizado custom especial">
                     <div class="product-content special-content">
                         <h2 class="product-title special-title">🌹 Ramos Personalizados 🌹</h2>
                         <p class="product-description special-description">
@@ -910,17 +509,30 @@
                 </div>
 
             </div>
+
+            <!-- Mensaje cuando no hay resultados -->
+            <div id="noResultsMsg" class="no-results" style="display:none;">
+                <p>🌸 No encontramos productos que coincidan con tu búsqueda.</p>
+                <p>Prueba con otro código (001-017) o categoría, o escríbenos por WhatsApp para un ramo personalizado.</p>
+            </div>
         </div>
     </section>
+
     <!-- Modal de Vista Previa de Imagen -->
-    <div id="imageModal" class="modal" onclick="closeImageModal()">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
+    <div id="imageModal" class="modal" onclick="closeImageModalOnBackdrop(event)">
+        <span class="close" onclick="closeImageModal()" aria-label="Cerrar">&times;</span>
+        <div class="modal-inner">
+            <img class="modal-content" id="modalImage" alt="Vista previa">
+            <div class="modal-caption">
+                <span id="modalCode" class="modal-code"></span>
+                <h3 id="modalTitle" class="modal-title"></h3>
+            </div>
+        </div>
     </div>
 
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
-        <a href="#" onclick="return trackWhatsAppLead('https://wa.me/573170518077', 'floating_button_catalogo')">
+        <a href="#" onclick="return trackWhatsAppLead('https://wa.me/573170518077', 'floating_button_catalogo')" aria-label="Escríbenos por WhatsApp">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                 <path
                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488" />
@@ -929,48 +541,66 @@
     </div>
 
     <script>
-        // Función para normalizar texto: quita tildes y pasa a minúsculas
+        // Normalizar texto: quita tildes y pasa a minúsculas
         function normalizeText(text) {
-            return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+            return (text || '').toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
         }
 
-        // Sistema de filtrado y búsqueda de productos
         document.addEventListener('DOMContentLoaded', function () {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const productCards = document.querySelectorAll('.product-card');
             const searchInput = document.getElementById('searchInput');
             const clearSearch = document.getElementById('clearSearch');
             const searchResults = document.getElementById('searchResults');
+            const noResultsMsg = document.getElementById('noResultsMsg');
 
             let activeCategory = 'all';
 
-            function filterProducts(category) {
-                activeCategory = category;
-                applyFilters();
+            function cardMatchesCategory(card, category) {
+                if (category === 'all') return true;
+                const cardCats = (card.dataset.category || '').split(/\s+/);
+                return cardCats.includes(category);
             }
 
             function applyFilters() {
-                const searchTerm = normalizeText(searchInput.value.trim());
+                const rawSearch = searchInput.value.trim();
+                const searchTerm = normalizeText(rawSearch);
+                // Si el término es un número (con o sin ceros), construimos también la versión 3-dígitos
+                const isNumeric = /^\d{1,3}$/.test(rawSearch);
+                const paddedCode = isNumeric ? rawSearch.padStart(3, '0') : null;
+
                 let visibleCount = 0;
 
                 productCards.forEach(card => {
                     const title = card.querySelector('.product-title, .special-title');
                     const description = card.querySelector('.product-description, .special-description');
                     const badge = card.querySelector('.category-badge');
-                    const cardCategory = card.dataset.category;
+                    const code = card.dataset.code || '';
+                    const keywords = card.dataset.keywords || '';
 
                     const titleText = title ? normalizeText(title.textContent) : '';
                     const descText = description ? normalizeText(description.textContent) : '';
                     const badgeText = badge ? normalizeText(badge.textContent) : '';
+                    const keywordsText = normalizeText(keywords);
 
-                    const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
-                    const matchesSearch = !searchTerm ||
-                        titleText.includes(searchTerm) ||
-                        descText.includes(searchTerm) ||
-                        badgeText.includes(searchTerm);
+                    const matchesCategory = cardMatchesCategory(card, activeCategory);
+
+                    let matchesSearch = !searchTerm;
+                    if (!matchesSearch) {
+                        if (paddedCode && code === paddedCode) {
+                            matchesSearch = true;
+                        } else {
+                            matchesSearch =
+                                titleText.includes(searchTerm) ||
+                                descText.includes(searchTerm) ||
+                                badgeText.includes(searchTerm) ||
+                                keywordsText.includes(searchTerm) ||
+                                code.includes(searchTerm);
+                        }
+                    }
 
                     if (matchesCategory && matchesSearch) {
-                        card.style.display = 'block';
+                        card.style.display = '';
                         card.classList.add('fadeInUp');
                         visibleCount++;
                     } else {
@@ -979,11 +609,11 @@
                     }
                 });
 
-                // Mostrar mensaje de resultados
+                // Mensaje de resultados
                 if (searchTerm) {
                     searchResults.style.display = 'block';
                     if (visibleCount === 0) {
-                        searchResults.textContent = 'No se encontraron productos para "' + searchInput.value.trim() + '"';
+                        searchResults.textContent = 'No se encontraron productos para "' + rawSearch + '"';
                     } else {
                         searchResults.textContent = visibleCount + ' producto' + (visibleCount !== 1 ? 's' : '') + ' encontrado' + (visibleCount !== 1 ? 's' : '');
                     }
@@ -991,62 +621,81 @@
                     searchResults.style.display = 'none';
                 }
 
-                // Mostrar/ocultar botón de limpiar
+                // Mensaje "sin resultados" en grilla
+                if (noResultsMsg) {
+                    noResultsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+                }
+
                 clearSearch.style.display = searchTerm ? 'block' : 'none';
             }
 
-            // Evento de búsqueda en tiempo real
+            // Búsqueda en tiempo real
             searchInput.addEventListener('input', applyFilters);
 
-            // Botón para limpiar búsqueda
+            // Limpiar
             clearSearch.addEventListener('click', function () {
                 searchInput.value = '';
                 applyFilters();
                 searchInput.focus();
             });
 
+            // Filtros de categoría
             filterButtons.forEach(button => {
                 button.addEventListener('click', function () {
                     filterButtons.forEach(btn => btn.classList.remove('active'));
                     this.classList.add('active');
-
-                    const category = this.dataset.category;
-                    filterProducts(category);
+                    activeCategory = this.dataset.category;
+                    applyFilters();
 
                     const url = new URL(window.location);
-                    url.searchParams.set('categoria', category);
+                    if (activeCategory === 'all') {
+                        url.searchParams.delete('categoria');
+                    } else {
+                        url.searchParams.set('categoria', activeCategory);
+                    }
                     window.history.pushState({}, '', url);
                 });
             });
 
+            // Categoría inicial via URL
             const urlParams = new URLSearchParams(window.location.search);
             const categoryParam = urlParams.get('categoria');
-
-            if (categoryParam && categoryParam !== 'all') {
-                const targetButton = document.querySelector(`[data-category="${categoryParam}"]`);
+            if (categoryParam) {
+                const targetButton = document.querySelector('[data-category="' + categoryParam + '"]');
                 if (targetButton) {
                     targetButton.click();
                 }
             }
         });
 
-        // Función para abrir modal de imagen
-        function openImageModal(imageSrc) {
+        // Modal de imagen
+        function openImageModal(imageSrc, title, code) {
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalCode = document.getElementById('modalCode');
             modal.style.display = 'block';
             modalImg.src = imageSrc;
+            modalImg.alt = title || 'Vista previa';
+            if (modalTitle) modalTitle.textContent = title || '';
+            if (modalCode) modalCode.textContent = code ? 'Código ' + code : '';
             document.body.style.overflow = 'hidden';
         }
 
-        // Función para cerrar modal
         function closeImageModal() {
             const modal = document.getElementById('imageModal');
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
 
-        // Cerrar modal con tecla ESC
+        function closeImageModalOnBackdrop(event) {
+            // Solo cerrar si se clickeó el fondo, no la imagen ni el contenido
+            if (event.target.id === 'imageModal') {
+                closeImageModal();
+            }
+        }
+
+        // Cerrar modal con ESC
         document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
                 closeImageModal();
@@ -1057,3 +706,4 @@
 </body>
 
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

@@ -55,6 +55,40 @@ body {
     border-radius: 2px;
 }
 
+/* Promo Banner (descuentos) */
+.promo-banner {
+    max-width: 720px;
+    margin: 1.25rem auto 0;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1.5px solid rgba(242, 206, 162, 0.7);
+    border-radius: 14px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.promo-badge {
+    background: #fff;
+    color: #8C5F37;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.promo-text {
+    color: #fff;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
 /* Catalog Section */
 .catalog {
     padding: 60px 0 80px 0;
@@ -153,6 +187,93 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Código de producto (chip arriba del título) */
+.product-code {
+    display: inline-block;
+    background: linear-gradient(135deg, #F2CEA2, #F2C9C9);
+    color: #8C5F37;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.product-content {
+    text-align: center;
+}
+
+/* Bloque de precios antes/ahora */
+.price-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 1.25rem;
+}
+
+.price-old {
+    font-size: 1rem;
+    color: #b85a5a;
+    text-decoration: line-through;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.price-now {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #8C5F37;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+    letter-spacing: -0.5px;
+}
+
+/* Badge de descuento (esquina izquierda) */
+.discount-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 10px rgba(192, 57, 43, 0.35);
+    z-index: 2;
+}
+
+/* Hint de zoom dentro de la imagen */
+.zoom-hint {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(140, 95, 55, 0.85);
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.product-image:hover .zoom-hint {
+    opacity: 1;
+}
+
+/* En móvil, mostrar siempre el hint con menor opacidad */
+@media (hover: none) {
+    .zoom-hint {
+        opacity: 0.85;
+    }
+}
+
 .product-button {
     width: 100%;
     background: linear-gradient(135deg, #8C5F37, #BF9460);
@@ -237,14 +358,51 @@ body {
     cursor: pointer;
 }
 
+.modal-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 90%;
-    max-height: 85vh;
+    max-width: 90vw;
+    max-height: 75vh;
     object-fit: contain;
     animation: zoom 0.3s ease-out;
     cursor: default;
+    border-radius: 10px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-caption {
+    text-align: center;
+    color: #fff;
+    animation: zoom 0.4s ease-out;
+}
+
+.modal-code {
+    display: inline-block;
+    background: linear-gradient(135deg, #F2CEA2, #F2C9C9);
+    color: #8C5F37;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #F2CEA2;
 }
 
 @keyframes zoom {
@@ -302,6 +460,22 @@ body {
     box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
 }
 
+/* Mensaje sin resultados */
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #8C5F37;
+    font-size: 1.15rem;
+    background: rgba(242, 206, 162, 0.25);
+    border-radius: 16px;
+    margin-top: 2rem;
+}
+
+.no-results p {
+    margin: 0.4rem 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .products-grid {
@@ -334,6 +508,32 @@ body {
         font-size: 1.8rem;
     }
 
+    .price-now {
+        font-size: 1.6rem;
+    }
+
+    .price-old {
+        font-size: 0.95rem;
+    }
+
+    .discount-badge {
+        top: 10px;
+        left: 10px;
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    .promo-banner {
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px 14px;
+    }
+
+    .promo-text {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
     .whatsapp-float {
         bottom: 15px;
         right: 15px;
@@ -345,8 +545,12 @@ body {
     }
 
     .modal-content {
-        max-width: 95%;
-        max-height: 80vh;
+        max-width: 95vw;
+        max-height: 65vh;
+    }
+
+    .modal-title {
+        font-size: 1.15rem;
     }
 
     .close {

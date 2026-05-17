@@ -129,7 +129,12 @@ button { border: none; cursor: pointer; font-family: var(--font-body); }
 
 /* === HERO SECTION === */
 .landing-hero {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+    background:
+        linear-gradient(135deg, rgba(140, 95, 55, 0.78) 0%, rgba(191, 148, 96, 0.62) 50%, rgba(140, 95, 55, 0.78) 100%),
+        url('https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 5rem 0 4rem;
     text-align: center;
@@ -432,6 +437,29 @@ button { border: none; cursor: pointer; font-family: var(--font-body); }
     border-radius: var(--radius-full);
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+.product-discount-badge {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    color: #fff;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 10px rgba(192, 57, 43, 0.35);
+}
+
+.price-old-landing {
+    display: block;
+    font-size: 0.85rem;
+    color: #b85a5a;
+    text-decoration: line-through;
+    margin-bottom: 2px;
+    opacity: 0.85;
 }
 
 .product-body {
